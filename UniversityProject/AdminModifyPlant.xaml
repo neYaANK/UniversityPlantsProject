@@ -1,0 +1,73 @@
+﻿<Window x:Class="UniversityProject.AdminModifyPlant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversityProject"
+        mc:Ignorable="d"
+        Title="AdminModifyPlant" Height="450" Width="800" Loaded="Window_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="450"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Назва:</Label>
+            <TextBox Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" x:Name="name"></TextBox>
+            <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Вид:</Label>
+            <ComboBox Grid.Row="1" Grid.Column="2"  VerticalAlignment="Center" x:Name="SpecieCombo"></ComboBox>
+            <Label Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Сорт:</Label>
+            <TextBox Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" x:Name="variety"></TextBox>
+
+            <Label Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Опис:</Label>
+            <RichTextBox Grid.Row="3" Grid.Column="2" x:Name="descriptionTextBox"></RichTextBox>
+            <Label Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">Фото рослини:</Label>
+            <Button Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" Click="Button_Click">Загрузити</Button>
+            <Label Grid.Row="4" Grid.Column="2" VerticalAlignment="Bottom" x:Name="uploadResult"></Label>
+            <Image Grid.Row="4" Grid.Column="3" x:Name="imagePlant"></Image>
+            <Button Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" Click="Button_Click_1">Додати</Button>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <ComboBox VerticalAlignment="Center" Grid.Column="0" x:Name="categoryComboBox" SelectedIndex="0" ></ComboBox>
+                <ComboBox VerticalAlignment="Center" Grid.Column="1" x:Name="diseaseComboBox" SelectedIndex="0"></ComboBox>
+                <Button Grid.Column="2" VerticalAlignment="Center" Click="Button_Click_2">Додати</Button>
+                <Button Grid.Column="3" VerticalAlignment="Center" Click="Button_Click_3">Видалити виділене</Button>
+            </Grid>
+            <ListView Grid.Row="1" SelectedValuePath="Id" x:Name="diseaseListView" DisplayMemberPath="Name">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Name}" Width="150">Назва</GridViewColumn>
+                        <GridViewColumn  DisplayMemberBinding="{Binding Category}" Width="150">Вид хвороби</GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>

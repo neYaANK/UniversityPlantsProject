@@ -1,0 +1,49 @@
+﻿<Window x:Class="UniversityProject.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversityProject"
+        mc:Ignorable="d"
+        Title="UserWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/> 
+        </Grid.ColumnDefinitions>
+        <ListView Grid.Column="0" x:Name="toSearch" SelectedValuePath="Id">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Width="150">Симптом</GridViewColumn>
+                    <GridViewColumn Width="75"  DisplayMemberBinding="{Binding Power}">Сила</GridViewColumn>
+                </GridView>
+            </ListView.View>
+            
+        </ListView>
+        
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ComboBox x:Name="comboPlant" SelectionChanged="comboPlant_SelectionChanged"></ComboBox>
+            <ComboBox x:Name="comboSymptom" Grid.Row="1"></ComboBox>
+            <Slider Grid.Row="2" x:Name="powerSymptop" Minimum="1" Maximum="10" IsSnapToTickEnabled="True"
+    TickFrequency="1" ValueChanged="powerSymptop_ValueChanged"></Slider>
+            <Label Grid.Row="2" VerticalAlignment="Center" x:Name="powerSymptomShown">Вираженість симптома: </Label>
+            <Button Grid.Row="3" Height="54" VerticalAlignment="Top" Click="Button_Click">Додати симптом</Button>
+            <Button Grid.Row="4" Click="Button_Click_1">Видалити обраний симптом</Button>
+            <Button Grid.Row="5" Click="Button_Click_2">Показати хвороби</Button>
+            <Button Grid.Row="6" Click="Button_Click_3">Показати історію</Button>
+
+        </Grid>
+        <ListView  Grid.Column="2" x:Name="userResult" MouseDoubleClick="userResult_MouseDoubleClick"></ListView>
+    </Grid>
+</Window>

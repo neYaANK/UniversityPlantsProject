@@ -1,0 +1,32 @@
+﻿<Window x:Class="UniversityProject.AdminAddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversityProject"
+        mc:Ignorable="d"
+        Title="AdminAddWindow" Height="155" Width="625" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <RadioButton Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" GroupName="toAdd" x:Name="specie">Вид рослини</RadioButton>
+            <RadioButton Grid.Column="1" x:Name="plant" HorizontalAlignment="Center" VerticalAlignment="Center" GroupName="toAdd">Рослина</RadioButton>
+            <RadioButton Grid.Column="2" x:Name="diseaseCategory" HorizontalAlignment="Center" VerticalAlignment="Center" GroupName="toAdd">Вид хвороби</RadioButton>
+            <RadioButton Grid.Column="3" x:Name="disease" HorizontalAlignment="Center" VerticalAlignment="Center" GroupName="toAdd">Хвороба</RadioButton>
+            <RadioButton Grid.Column="4" x:Name="symptom" HorizontalAlignment="Center" VerticalAlignment="Center" GroupName="toAdd">Симптом</RadioButton>
+        </Grid>
+        <Button Grid.Row="1" Width="150" Height="30" Margin="225,10,206,10" Click="Button_Click">Обрати</Button>
+    </Grid>
+</Window>

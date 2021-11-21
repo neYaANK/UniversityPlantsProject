@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UniversityProject.General.Additional">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>General\Additional.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversityProject.General.DiseaseEqualityComparer">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\DiseaseEqualityComparer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UniversityProject.General.ListViewDiseaseItem">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>General\ListViewDiseaseItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversityProject.General.ListViewHistoryItem">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAEAAAAAAAAAAIAAAAAAAAAABAAAAAQA=</HashCode>
+      <FileName>General\ListViewHistoryItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversityProject.General.PlantEqualityComparer">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\PlantEqualityComparer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UniversityProject.General.SymptomPowerItem">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>General\SymptomPowerItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UniversityProject.General.SymptomPowerItemEqualityComparer">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>General\SymptomPowerItemEqualityComparer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UniversityProject.General.DSTagData">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>General\DSTagData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="UniversityProject.General.TableType">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAEAAAAAAAAAAAIAAAAAAgAAAAAAAIAAAA=</HashCode>
+      <FileName>General\TableType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

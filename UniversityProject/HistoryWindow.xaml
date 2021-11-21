@@ -1,0 +1,20 @@
+﻿<Window x:Class="UniversityProject.HistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversityProject"
+        mc:Ignorable="d"
+        Title="HistoryWindow" Height="416" Width="407" Loaded="Window_Loaded">
+    <Grid>
+        <ListView x:Name="history" SelectedValuePath="Id">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding PlantName}" Width="100">Рослина</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding DiseaseName}" Width="100">Хвороба</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Time}" Width="160">Час</GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

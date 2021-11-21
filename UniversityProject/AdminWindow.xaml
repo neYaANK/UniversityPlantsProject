@@ -1,0 +1,54 @@
+﻿<Window x:Class="UniversityProject.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UniversityProject"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <TreeView Grid.Column="0" x:Name="diseases" SelectedItemChanged="diseases_SelectedItemChanged">
+        </TreeView>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image x:Name="SelectedImage" Grid.Row="0" ></Image>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"  HorizontalAlignment="Center" x:Name="SelectedName"></Label>
+                <ListBox Grid.Row="1" x:Name="SelectedData" SelectionChanged="SelectedData_SelectionChanged" ></ListBox>
+            </Grid>
+            
+            
+        </Grid>
+        
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+
+
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Click="Button_Click">Додати</Button>
+            <Button Grid.Row="1" Click="Button_Click_1">Редагувати обране</Button>
+            <Button Grid.Row="2" Click="Button_Click_2">Видалити виділене</Button>
+        </Grid>
+    </Grid>
+</Window>
